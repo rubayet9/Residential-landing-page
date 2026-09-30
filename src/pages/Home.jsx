@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay, EffectFade } from "swiper/modules";
 import "swiper/css";
@@ -16,7 +16,20 @@ import {
   HiOutlineShieldCheck,
   HiOutlineCursorClick,
   HiOutlineUserGroup,
+  HiOutlineSearch,
+  HiOutlineX,
+  HiOutlineFilter,
 } from "react-icons/hi";
+
+const categories = [
+  { key: "all", label: "All Properties" },
+  { key: "Single-Family Home", label: "Single-Family Homes" },
+  { key: "Apartment", label: "Apartments" },
+  { key: "Townhouse", label: "Townhouses" },
+  { key: "Student Housing", label: "Student Housing" },
+  { key: "Senior Living Community", label: "Senior Living" },
+  { key: "Vacation Rental", label: "Vacation Rentals" },
+];
 
 const slides = [
   {
@@ -76,7 +89,14 @@ const whyChooseUs = [
   },
 ];
 
+const INITIAL_DISPLAY_COUNT = 9;
+
 const Home = () => {
+  const [selectedCategory, setSelectedCategory] = useState("all");
+  const [selectedStatus, setSelectedStatus] = useState("all");
+  const [searchQuery, setSearchQuery] = useState("");
+  const [visibleCount, setVisibleCount] = useState(INITIAL_DISPLAY_COUNT);
+
   useEffect(() => {
     AOS.init({
       duration: 800,
@@ -85,9 +105,57 @@ const Home = () => {
     });
   }, []);
 
+  // Filter properties
+  const filteredProperties = useMemo(() => {
+    return properties.filter((property) => {
+      // Category Match
+      const matchesCategory =
+        selectedCategory === "all" ||
+        property.segment_name.toLowerCase() === selectedCategory.toLowerCase();
+
+      // Status Match (sale / rent)
+      const matchesStatus =
+        selectedStatus === "all" || property.status === selectedStatus;
+
+      // Search Query Match (title, location, segment, description)
+      const query = searchQuery.trim().toLowerCase();
+      const matchesSearch =
+        !query ||
+        property.estate_title.toLowerCase().includes(query) ||
+        property.location.toLowerCase().includes(query) ||
+        property.segment_name.toLowerCase().includes(query) ||
+        property.description.toLowerCase().includes(query);
+
+      return matchesCategory && matchesStatus && matchesSearch;
+    });
+  }, [selectedCategory, selectedStatus, searchQuery]);
+
+  // Reset display count when filters change
+  useEffect(() => {
+    setVisibleCount(INITIAL_DISPLAY_COUNT);
+  }, [selectedCategory, selectedStatus, searchQuery]);
+
+  // Calculate category counts
+  const categoryCounts = useMemo(() => {
+    const counts = { all: properties.length };
+    properties.forEach((p) => {
+      counts[p.segment_name] = (counts[p.segment_name] || 0) + 1;
+    });
+    return counts;
+  }, []);
+
+  const handleResetFilters = () => {
+    setSelectedCategory("all");
+    setSelectedStatus("all");
+    setSearchQuery("");
+  };
+
+  const displayedProperties = filteredProperties.slice(0, visibleCount);
+  const hasMore = visibleCount < filteredProperties.length;
+
   return (
     <>
-      <PageTitle title="Find Your Next Home" />
+      <PageTitle title="Find Your Next Home — Nestora Living" />
 
       {/* Hero Slider */}
       <section className="hero-slider">
@@ -110,9 +178,9 @@ const Home = () => {
                 <div className="slide-content">
                   <h1 className="slide-headline">{slide.headline}</h1>
                   <p className="slide-description">{slide.description}</p>
-                  <Link to="/#estates" className="btn btn-primary btn-lg">
+                  <a href="#estates" className="btn btn-primary btn-lg">
                     {slide.cta}
-                  </Link>
+                  </a>
                 </div>
               </div>
             </SwiperSlide>
@@ -120,21 +188,148 @@ const Home = () => {
         </Swiper>
       </section>
 
-      {/* Featured Residences */}
+      {/* Featured Residences with Dynamic Category Filtering */}
       <section className="estates-section" id="estates">
         <div className="section-container">
           <div className="section-header" data-aos="fade-up">
-            <h2 className="section-title">Featured Residences</h2>
+            <h2 className="section-title">Explore Residential Properties</h2>
             <p className="section-subtitle">
-              A curated collection of residential spaces selected for comfort,
-              accessibility and everyday living.
+              Filter by category, search by neighborhood or check for sale vs rental listings.
             </p>
           </div>
-          <div className="properties-grid">
-            {properties.map((property) => (
-              <PropertyCard key={property.id} property={property} />
-            ))}
+
+          {/* Filter & Search Controls */}
+          <div className="filter-controls-wrapper" data-aos="fade-up">
+            {/* Search & Status Bar */}
+            <div className="filter-search-bar">
+              <div className="search-input-wrapper">
+                <HiOutlineSearch className="search-icon" />
+                <input
+                  type="text"
+                  placeholder="Search by title, location (e.g., Gulshan, Cox's Bazar, Villa)..."
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  className="search-input"
+                />
+                {searchQuery && (
+                  <button
+                    type="button"
+                    onClick={() => setSearchQuery("")}
+                    className="search-clear-btn"
+                    aria-label="Clear search"
+                  >
+                    <HiOutlineX />
+                  </button>
+                )}
+              </div>
+
+              {/* Status Filter Buttons */}
+              <div className="status-filter-pills">
+                <button
+                  type="button"
+                  className={`status-pill ${selectedStatus === "all" ? "active" : ""}`}
+                  onClick={() => setSelectedStatus("all")}
+                >
+                  All Status
+                </button>
+                <button
+                  type="button"
+                  className={`status-pill ${selectedStatus === "sale" ? "active" : ""}`}
+                  onClick={() => setSelectedStatus("sale")}
+                >
+                  For Sale
+                </button>
+                <button
+                  type="button"
+                  className={`status-pill ${selectedStatus === "rent" ? "active" : ""}`}
+                  onClick={() => setSelectedStatus("rent")}
+                >
+                  For Rent
+                </button>
+              </div>
+            </div>
+
+            {/* Category Pills */}
+            <div className="category-pills-container">
+              {categories.map((cat) => {
+                const count =
+                  cat.key === "all"
+                    ? categoryCounts.all
+                    : categoryCounts[cat.key] || 0;
+                const isActive = selectedCategory === cat.key;
+                return (
+                  <button
+                    key={cat.key}
+                    type="button"
+                    className={`category-pill ${isActive ? "active" : ""}`}
+                    onClick={() => setSelectedCategory(cat.key)}
+                  >
+                    <span>{cat.label}</span>
+                    <span className="category-pill-count">{count}</span>
+                  </button>
+                );
+              })}
+            </div>
+
+            {/* Results Count & Active Filters Indicator */}
+            <div className="filter-summary">
+              <span>
+                Showing <strong>{displayedProperties.length}</strong> of{" "}
+                <strong>{filteredProperties.length}</strong> homes
+                {selectedCategory !== "all" && ` in ${selectedCategory}`}
+                {selectedStatus !== "all" &&
+                  ` (${selectedStatus === "sale" ? "For Sale" : "For Rent"})`}
+              </span>
+              {(selectedCategory !== "all" ||
+                selectedStatus !== "all" ||
+                searchQuery) && (
+                <button
+                  type="button"
+                  onClick={handleResetFilters}
+                  className="btn-reset-filters"
+                >
+                  Reset Filters ✕
+                </button>
+              )}
+            </div>
           </div>
+
+          {/* Properties Grid or Empty State */}
+          {displayedProperties.length > 0 ? (
+            <>
+              <div className="properties-grid">
+                {displayedProperties.map((property) => (
+                  <PropertyCard key={property.id} property={property} />
+                ))}
+              </div>
+
+              {/* Load More Button */}
+              {hasMore && (
+                <div className="load-more-container" data-aos="fade-up">
+                  <button
+                    type="button"
+                    className="btn btn-primary btn-lg load-more-btn"
+                    onClick={() => setVisibleCount((prev) => prev + 9)}
+                  >
+                    Load More Properties ({filteredProperties.length - visibleCount} remaining) ↓
+                  </button>
+                </div>
+              )}
+            </>
+          ) : (
+            <div className="empty-properties-state" data-aos="fade-up">
+              <div className="empty-icon">🏠</div>
+              <h3>No properties found</h3>
+              <p>No residential properties match your selected filter criteria.</p>
+              <button
+                type="button"
+                className="btn btn-primary"
+                onClick={handleResetFilters}
+              >
+                View All {properties.length} Properties
+              </button>
+            </div>
+          )}
         </div>
       </section>
 
@@ -213,9 +408,9 @@ const Home = () => {
                   </div>
                 </li>
               </ul>
-              <Link to="/#estates" className="btn btn-primary">
+              <a href="#estates" className="btn btn-primary">
                 Explore Residences
-              </Link>
+              </a>
             </div>
           </div>
         </div>

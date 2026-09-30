@@ -1,6 +1,6 @@
 [
   {
-    "id": "res-001",
+    "id": "sfh-001",
     "estate_title": "Meadow Court Family Home",
     "segment_name": "Single-Family Home",
     "description": "A bright family residence with generous living spaces, a private garden and practical everyday facilities. This home features an open-plan kitchen, spacious bedrooms and a beautifully landscaped outdoor area perfect for families.",
@@ -9,112 +9,10 @@
     "area": "2,450 sq ft",
     "location": "Bashundhara, Dhaka",
     "image": "/images/property-1.jpg",
-    "facilities": [
-      "living room",
-      "modern kitchen",
-      "private garden",
-      "3 bedrooms",
-      "2 bathrooms",
-      "parking"
-    ]
+    "facilities": ["living room", "modern kitchen", "private garden", "3 bedrooms", "2 bathrooms", "parking"]
   },
   {
-    "id": "res-002",
-    "estate_title": "Lakeview Comfort Apartment",
-    "segment_name": "Apartment",
-    "description": "A contemporary apartment with open views, efficient room planning and a calm residential atmosphere. Large windows bring natural light into every room while the modern layout maximizes usable space.",
-    "price": "৳58,000 / month",
-    "status": "rent",
-    "area": "1,720 sq ft",
-    "location": "Uttara, Dhaka",
-    "image": "/images/property-2.jpg",
-    "facilities": [
-      "living room",
-      "kitchen",
-      "balcony",
-      "3 bedrooms",
-      "2 bathrooms",
-      "lift"
-    ]
-  },
-  {
-    "id": "res-003",
-    "estate_title": "Green Lane Townhouse",
-    "segment_name": "Townhouse",
-    "description": "A stylish townhouse designed for residents who want a balance between privacy, community and convenient city access. Features multiple floors with distinct living and sleeping zones.",
-    "price": "৳92,000 / month",
-    "status": "rent",
-    "area": "2,100 sq ft",
-    "location": "Dhanmondi, Dhaka",
-    "image": "/images/property-3.jpg",
-    "facilities": [
-      "living room",
-      "dining area",
-      "kitchen",
-      "roof access",
-      "parking",
-      "3 bedrooms"
-    ]
-  },
-  {
-    "id": "res-004",
-    "estate_title": "Campus Nest Student Residence",
-    "segment_name": "Student Housing",
-    "description": "A purpose-oriented residential space with study-friendly rooms and shared facilities for student living. Located near major universities with high-speed internet and quiet study zones.",
-    "price": "৳18,000 / month",
-    "status": "rent",
-    "area": "850 sq ft",
-    "location": "Dhanmondi, Dhaka",
-    "image": "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=800&q=80",
-    "facilities": [
-      "study room",
-      "shared kitchen",
-      "high-speed Wi-Fi",
-      "24/7 security",
-      "laundry facility",
-      "common lounge"
-    ]
-  },
-  {
-    "id": "res-005",
-    "estate_title": "Willow Senior Living Residence",
-    "segment_name": "Senior Living Community",
-    "description": "A comfortable residential environment planned around accessibility, safety and peaceful day-to-day living. Equipped with elevator access, emergency response, and community gardens.",
-    "price": "৳65,000 / month",
-    "status": "rent",
-    "area": "1,300 sq ft",
-    "location": "Gulshan, Dhaka",
-    "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&q=80",
-    "facilities": [
-      "accessible entry",
-      "wheelchair friendly",
-      "common lounge",
-      "medical assistance",
-      "elevator",
-      "landscaped park"
-    ]
-  },
-  {
-    "id": "res-006",
-    "estate_title": "Sunrise Coastal Holiday Residence",
-    "segment_name": "Vacation Rental",
-    "description": "A relaxed residential vacation stay with panoramic sea views, open surroundings and family-friendly amenities. Perfect for refreshing getaways with private beachfront access.",
-    "price": "৳12,000 / night",
-    "status": "rent",
-    "area": "1,950 sq ft",
-    "location": "Cox's Bazar, Bangladesh",
-    "image": "https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?w=800&q=80",
-    "facilities": [
-      "sea-view balcony",
-      "open-air terrace",
-      "modern kitchen",
-      "2 bedrooms",
-      "private parking",
-      "swimming pool access"
-    ]
-  },
-  {
-    "id": "res-007",
+    "id": "sfh-002",
     "estate_title": "Evergreen Forest Villa",
     "segment_name": "Single-Family Home",
     "description": "An architectural masterpiece offering luxury living nestled amidst natural greenery. Features high ceilings, double glazed windows, a private pool, and smart home automation throughout.",
@@ -123,17 +21,70 @@
     "area": "3,800 sq ft",
     "location": "Purbachal, Dhaka",
     "image": "https://images.unsplash.com/photo-1613977257363-707ba9348227?w=800&q=80",
-    "facilities": [
-      "private swimming pool",
-      "smart home system",
-      "4 master bedrooms",
-      "landscaped lawn",
-      "servant quarter",
-      "double garage"
-    ]
+    "facilities": ["private swimming pool", "smart home system", "4 master bedrooms", "landscaped lawn", "servant quarter", "double garage"]
   },
   {
-    "id": "res-008",
+    "id": "sfh-003",
+    "estate_title": "Sunburst Modern Cottage",
+    "segment_name": "Single-Family Home",
+    "description": "Charming detached single-family cottage featuring sunlit open spaces, cedar-trimmed ceilings, a spacious kitchen island, and a private driveway.",
+    "price": "৳1,45,00,000",
+    "status": "sale",
+    "area": "2,200 sq ft",
+    "location": "Savar, Dhaka",
+    "image": "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=80",
+    "facilities": ["front porch", "custom kitchen", "3 bedrooms", "2 bathrooms", "solar backup", "private lawn"]
+  },
+  {
+    "id": "sfh-004",
+    "estate_title": "Oakridge Suburban Residence",
+    "segment_name": "Single-Family Home",
+    "description": "Contemporary suburban family dwelling in a quiet neighborhood with full perimeter security, backyard patio for barbecues, and expansive children's playroom.",
+    "price": "৳2,20,00,000",
+    "status": "sale",
+    "area": "2,900 sq ft",
+    "location": "Mirpur DOHS, Dhaka",
+    "image": "https://images.unsplash.com/photo-1598228723793-52759bba239c?w=800&q=80",
+    "facilities": ["playroom", "backyard patio", "4 bedrooms", "3 bathrooms", "modern kitchen", "generator backup"]
+  },
+  {
+    "id": "sfh-005",
+    "estate_title": "Cedarwood Garden Mansion",
+    "segment_name": "Single-Family Home",
+    "description": "Grand single-family estate boasting imported marble flooring, majestic chandeliers, private home theater, gym, and lush botanical gardens.",
+    "price": "৳5,50,00,000",
+    "status": "sale",
+    "area": "4,500 sq ft",
+    "location": "Baridhara DOHS, Dhaka",
+    "image": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=800&q=80",
+    "facilities": ["home theater", "private gym", "5 master suites", "marble flooring", "driver quarters", "central AC"]
+  },
+  {
+    "id": "sfh-006",
+    "estate_title": "Whispering Pines Eco Villa",
+    "segment_name": "Single-Family Home",
+    "description": "Eco-friendly modern duplex villa surrounded by pine trees, featuring rainwater harvesting, solar roof system, and large organic fruit orchard.",
+    "price": "৳85,000 / month",
+    "status": "rent",
+    "area": "3,100 sq ft",
+    "location": "Gazipur, Dhaka",
+    "image": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=800&q=80",
+    "facilities": ["solar power", "fruit orchard", "3 bedrooms", "terrace garden", "car port", "24/7 security"]
+  },
+  {
+    "id": "apt-001",
+    "estate_title": "Lakeview Comfort Apartment",
+    "segment_name": "Apartment",
+    "description": "A contemporary apartment with open views, efficient room planning and a calm residential atmosphere. Large windows bring natural light into every room while the modern layout maximizes usable space.",
+    "price": "৳58,000 / month",
+    "status": "rent",
+    "area": "1,720 sq ft",
+    "location": "Uttara, Dhaka",
+    "image": "/images/property-2.jpg",
+    "facilities": ["living room", "kitchen", "balcony", "3 bedrooms", "2 bathrooms", "lift"]
+  },
+  {
+    "id": "apt-002",
     "estate_title": "Skyline Grand Penthouse",
     "segment_name": "Apartment",
     "description": "Ultra-modern top-floor penthouse with 360-degree city skyline views, private elevator access, designer italian kitchen, and an expansive rooftop sky lounge.",
@@ -142,17 +93,286 @@
     "area": "3,200 sq ft",
     "location": "Banani, Dhaka",
     "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80",
-    "facilities": [
-      "sky deck",
-      "private elevator",
-      "italian modular kitchen",
-      "3 suite bedrooms",
-      "jacuzzi",
-      "gym access"
-    ]
+    "facilities": ["sky deck", "private elevator", "italian modular kitchen", "3 suite bedrooms", "jacuzzi", "gym access"]
   },
   {
-    "id": "res-009",
+    "id": "apt-003",
+    "estate_title": "Crescent Bay Luxury Suite",
+    "segment_name": "Apartment",
+    "description": "Prime residential apartment with high-end interior woodwork, expansive double balconies, state-of-the-art security, and dedicated basement parking.",
+    "price": "৳3,10,00,000",
+    "status": "sale",
+    "area": "2,650 sq ft",
+    "location": "Gulshan-2, Dhaka",
+    "image": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80",
+    "facilities": ["double balconies", "italian fixtures", "4 bedrooms", "3 bathrooms", "swimming pool", "cctv"]
+  },
+  {
+    "id": "apt-004",
+    "estate_title": "Modern Minimalist Studio Flat",
+    "segment_name": "Apartment",
+    "description": "Sleek and compact studio apartment designed for urban professionals, featuring built-in smart storage, soundproof windows, and central heating/cooling.",
+    "price": "৳32,000 / month",
+    "status": "rent",
+    "area": "950 sq ft",
+    "location": "Mohakhali DOHS, Dhaka",
+    "image": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&q=80",
+    "facilities": ["open plan", "smart furniture", "1 bedroom", "designer bath", "high speed wifi", "concierge"]
+  },
+  {
+    "id": "apt-005",
+    "estate_title": "Panorama Heights Duplex",
+    "segment_name": "Apartment",
+    "description": "Stunning two-level duplex residence offering soaring ceiling heights, internal spiral staircase, master suite with walk-in closet, and private terrace.",
+    "price": "৳2,95,00,000",
+    "status": "sale",
+    "area": "3,400 sq ft",
+    "location": "Dhanmondi Road 27, Dhaka",
+    "image": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=80",
+    "facilities": ["duplex layout", "spiral staircase", "walk-in closet", "4 bedrooms", "private terrace", "rooftop garden"]
+  },
+  {
+    "id": "apt-006",
+    "estate_title": "Green Garden View Residency",
+    "segment_name": "Apartment",
+    "description": "Peaceful family flat overlooking central community park with south-facing cross ventilation, modular kitchen cabinets, and children playground access.",
+    "price": "৳62,000 / month",
+    "status": "rent",
+    "area": "1,850 sq ft",
+    "location": "Bashundhara R/A, Dhaka",
+    "image": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&q=80",
+    "facilities": ["park view", "south facing", "3 bedrooms", "3 bathrooms", "generator backup", "community hall"]
+  },
+  {
+    "id": "tnh-001",
+    "estate_title": "Green Lane Classic Townhouse",
+    "segment_name": "Townhouse",
+    "description": "A stylish townhouse designed for residents who want a balance between privacy, community and convenient city access. Features multiple floors with distinct living and sleeping zones.",
+    "price": "৳92,000 / month",
+    "status": "rent",
+    "area": "2,100 sq ft",
+    "location": "Dhanmondi, Dhaka",
+    "image": "/images/property-3.jpg",
+    "facilities": ["living room", "dining area", "kitchen", "roof access", "parking", "3 bedrooms"]
+  },
+  {
+    "id": "tnh-002",
+    "estate_title": "Brickstone Row Heritage House",
+    "segment_name": "Townhouse",
+    "description": "Exquisite brick-facade townhouse combining colonial architectural charm with modern luxury, multi-level living, and a private rear courtyard.",
+    "price": "৳2,40,00,000",
+    "status": "sale",
+    "area": "2,800 sq ft",
+    "location": "Wari, Dhaka",
+    "image": "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=800&q=80",
+    "facilities": ["brick facade", "rear courtyard", "3 floors", "4 bedrooms", "study nook", "gated entrance"]
+  },
+  {
+    "id": "tnh-003",
+    "estate_title": "Boulevard Triplex Townhome",
+    "segment_name": "Townhouse",
+    "description": "Triplex townhouse with private rooftop terrace, dedicated underground garage, home office studio, and luxury floor-to-ceiling glass paneling.",
+    "price": "৳3,80,00,000",
+    "status": "sale",
+    "area": "3,600 sq ft",
+    "location": "Banani DOHS, Dhaka",
+    "image": "https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?w=800&q=80",
+    "facilities": ["triplex design", "underground garage", "home office", "rooftop terrace", "4 master beds", "smart lock"]
+  },
+  {
+    "id": "tnh-004",
+    "estate_title": "Ivy Terrace Urban Townhouse",
+    "segment_name": "Townhouse",
+    "description": "Modern multi-storey townhome with lush vertical gardens, separate guest suite on the ground floor, and open-concept chef's kitchen on the upper floor.",
+    "price": "৳98,000 / month",
+    "status": "rent",
+    "area": "2,350 sq ft",
+    "location": "Uttara Sector 13, Dhaka",
+    "image": "https://images.unsplash.com/photo-1576941089067-2de3c901e126?w=800&q=80",
+    "facilities": ["vertical garden", "guest suite", "chef kitchen", "3 bedrooms", "attached parking", "intercom"]
+  },
+  {
+    "id": "tnh-005",
+    "estate_title": "Serenade Courtyard Townhome",
+    "segment_name": "Townhouse",
+    "description": "Spacious newly built townhouse situated around a landscaped central courtyard, providing serene outdoor living within a gated secure community.",
+    "price": "৳2,15,00,000",
+    "status": "sale",
+    "area": "2,750 sq ft",
+    "location": "Purbachal Sector 4, Dhaka",
+    "image": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80",
+    "facilities": ["central courtyard", "open terrace", "3 bedrooms", "3 bathrooms", "visitor parking", "solar backup"]
+  },
+  {
+    "id": "tnh-006",
+    "estate_title": "Maple Grove Gated Townhouse",
+    "segment_name": "Townhouse",
+    "description": "Premium 3-level residential townhouse located inside an exclusive gated complex with private lawn, community clubhouse, and 24/7 security patrols.",
+    "price": "৳1,10,000 / month",
+    "status": "rent",
+    "area": "2,500 sq ft",
+    "location": "Bashundhara Block I, Dhaka",
+    "image": "https://images.unsplash.com/photo-1592595896551-12b371d546d5?w=800&q=80",
+    "facilities": ["gated community", "clubhouse access", "private lawn", "3 bedrooms", "2 car garage", "fitness center"]
+  },
+  {
+    "id": "stu-001",
+    "estate_title": "Campus Nest Student Residence",
+    "segment_name": "Student Housing",
+    "description": "A purpose-oriented residential space with study-friendly rooms and shared facilities for student living. Located near major universities with high-speed internet and quiet study zones.",
+    "price": "৳18,000 / month",
+    "status": "rent",
+    "area": "850 sq ft",
+    "location": "Dhanmondi, Dhaka",
+    "image": "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=800&q=80",
+    "facilities": ["study room", "shared kitchen", "high-speed Wi-Fi", "24/7 security", "laundry facility", "common lounge"]
+  },
+  {
+    "id": "stu-002",
+    "estate_title": "Scholar Point Academic Hall",
+    "segment_name": "Student Housing",
+    "description": "Modern student dormitories walking distance from North South and Independent Universities, fully furnished with study desks, ergonomic chairs, and meal plans.",
+    "price": "৳20,000 / month",
+    "status": "rent",
+    "area": "920 sq ft",
+    "location": "Bashundhara R/A, Dhaka",
+    "image": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=800&q=80",
+    "facilities": ["high speed fiber", "study desks", "meal cafeteria", "biometric entry", "reading room", "power backup"]
+  },
+  {
+    "id": "stu-003",
+    "estate_title": "Unity Hall Shared Student Lofts",
+    "segment_name": "Student Housing",
+    "description": "Affordable student shared accommodation equipped with bunk lofts, personal lockers, recreation room with table tennis, and collaborative project rooms.",
+    "price": "৳15,000 / month",
+    "status": "rent",
+    "area": "750 sq ft",
+    "location": "Mirpur 2, Dhaka",
+    "image": "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&q=80",
+    "facilities": ["bunk lofts", "lockers", "recreation room", "shared pantry", "laundry service", "cctv security"]
+  },
+  {
+    "id": "stu-004",
+    "estate_title": "Greenwich Student Living Pods",
+    "segment_name": "Student Housing",
+    "description": "Private pod-style micro apartments tailored for university scholars and medical students needing peaceful, quiet, uninterrupted study environments.",
+    "price": "৳14,000 / month",
+    "status": "rent",
+    "area": "680 sq ft",
+    "location": "Farmgate, Dhaka",
+    "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800&q=80",
+    "facilities": ["private pod", "study lamp & desk", "filtered water", "rooftop library", "wi-fi 6", "daily housekeeping"]
+  },
+  {
+    "id": "stu-005",
+    "estate_title": "Apex Campus Co-Living Space",
+    "segment_name": "Student Housing",
+    "description": "Vibrant collegiate co-living residence featuring communal dining halls, gaming lounge, group study chambers, and bicycle storage.",
+    "price": "৳22,000 / month",
+    "status": "rent",
+    "area": "1,050 sq ft",
+    "location": "Uttara Sector 7, Dhaka",
+    "image": "https://images.unsplash.com/photo-1540518614846-7ede433c4ef0?w=800&q=80",
+    "facilities": ["gaming lounge", "group study chamber", "bicycle storage", "furnished rooms", "fast internet", "cafeteria"]
+  },
+  {
+    "id": "stu-006",
+    "estate_title": "Horizon Collegiate Residence",
+    "segment_name": "Student Housing",
+    "description": "Scenic hilltop student accommodation nestled near university grounds with tranquil forest views, outdoor study pavilions, and canteen.",
+    "price": "৳12,500 / month",
+    "status": "rent",
+    "area": "800 sq ft",
+    "location": "Chittagong University Area",
+    "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=80",
+    "facilities": ["hill view", "outdoor study pavilion", "shared kitchen", "solar water heater", "wifi", "security guard"]
+  },
+  {
+    "id": "snr-001",
+    "estate_title": "Willow Senior Living Residence",
+    "segment_name": "Senior Living Community",
+    "description": "A comfortable residential environment planned around accessibility, safety and peaceful day-to-day living. Equipped with elevator access, emergency response, and community gardens.",
+    "price": "৳65,000 / month",
+    "status": "rent",
+    "area": "1,300 sq ft",
+    "location": "Gulshan, Dhaka",
+    "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&q=80",
+    "facilities": ["accessible entry", "wheelchair friendly", "common lounge", "medical assistance", "elevator", "landscaped park"]
+  },
+  {
+    "id": "snr-002",
+    "estate_title": "Golden Years Wellness Village",
+    "segment_name": "Senior Living Community",
+    "description": "Serene retreat-style retirement community amidst fresh mountain tea air, with on-site nurses, gentle yoga lawns, and organic farm-to-table meals.",
+    "price": "৳50,000 / month",
+    "status": "rent",
+    "area": "1,600 sq ft",
+    "location": "Sreemangal, Sylhet",
+    "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
+    "facilities": ["on-site nurse", "yoga lawn", "organic dining", "non-slip flooring", "physiotherapy", "emergency call bell"]
+  },
+  {
+    "id": "snr-003",
+    "estate_title": "Harmony Haven Retirement Suites",
+    "segment_name": "Senior Living Community",
+    "description": "Purpose-built senior living suites with zero-threshold doorways, walk-in bathtubs with grab bars, daily activity coordinator, and social library.",
+    "price": "৳68,000 / month",
+    "status": "rent",
+    "area": "1,450 sq ft",
+    "location": "Uttara Sector 11, Dhaka",
+    "image": "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=800&q=80",
+    "facilities": ["walk-in tub", "grab bars", "social library", "doctor on call", "elevator", "housekeeping"]
+  },
+  {
+    "id": "snr-004",
+    "estate_title": "Silver Oaks Assisted Living",
+    "segment_name": "Senior Living Community",
+    "description": "Safe, warm, and engaging assisted living enclave providing specialized senior care, memory care support, recreational arts, and walking gardens.",
+    "price": "৳55,00,000",
+    "status": "sale",
+    "area": "1,500 sq ft",
+    "location": "Purbachal, Dhaka",
+    "image": "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?w=800&q=80",
+    "facilities": ["memory care", "assisted dining", "walking track", "24/7 staff", "emergency alarm", "wheelchair access"]
+  },
+  {
+    "id": "snr-005",
+    "estate_title": "Tranquil Pines Senior Enclave",
+    "segment_name": "Senior Living Community",
+    "description": "Affordable peaceful independent senior living apartments featuring landscaped flower gardens, weekly community music, and healthy nutrition plans.",
+    "price": "৳38,000 / month",
+    "status": "rent",
+    "area": "1,350 sq ft",
+    "location": "Bogura, Rajshahi",
+    "image": "https://images.unsplash.com/photo-1600585152220-90363fe7e115?w=800&q=80",
+    "facilities": ["flower garden", "nutrition planning", "community hall", "elevator", "security", "first aid"]
+  },
+  {
+    "id": "snr-006",
+    "estate_title": "Palm Grove Gentle Living",
+    "segment_name": "Senior Living Community",
+    "description": "Coastal retirement residences bathed in gentle sea breezes, featuring wide walkways, heated therapy pools, and dedicated wellness coaches.",
+    "price": "৳58,000 / month",
+    "status": "rent",
+    "area": "1,700 sq ft",
+    "location": "Chittagong Coastal Area",
+    "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80",
+    "facilities": ["therapy pool", "wellness coach", "wide walkways", "medical support", "elevator", "balanced meals"]
+  },
+  {
+    "id": "vac-001",
+    "estate_title": "Sunrise Coastal Holiday Residence",
+    "segment_name": "Vacation Rental",
+    "description": "A relaxed residential vacation stay with panoramic sea views, open surroundings and family-friendly amenities. Perfect for refreshing getaways with private beachfront access.",
+    "price": "৳12,000 / night",
+    "status": "rent",
+    "area": "1,950 sq ft",
+    "location": "Cox's Bazar, Bangladesh",
+    "image": "https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?w=800&q=80",
+    "facilities": ["sea-view balcony", "open-air terrace", "modern kitchen", "2 bedrooms", "private parking", "swimming pool access"]
+  },
+  {
+    "id": "vac-002",
     "estate_title": "Tea Garden Hillside Retreat",
     "segment_name": "Vacation Rental",
     "description": "Charming wooden-accent vacation bungalow perched above tranquil tea gardens. Experience cool mountain breezes, cozy bonfire nights, and scenic trekking trails.",
@@ -161,13 +381,54 @@
     "area": "2,200 sq ft",
     "location": "Sreemangal, Sylhet",
     "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
-    "facilities": [
-      "tea garden view",
-      "outdoor barbecue & firepit",
-      "wooden deck",
-      "3 bedrooms",
-      "fireplace",
-      "caretaker service"
-    ]
+    "facilities": ["tea garden view", "outdoor barbecue & firepit", "wooden deck", "3 bedrooms", "fireplace", "caretaker service"]
+  },
+  {
+    "id": "vac-003",
+    "estate_title": "Cloud Valley Mountain Chalet",
+    "segment_name": "Vacation Rental",
+    "description": "Romantic wooden mountain chalet above the clouds in Sajek, featuring panoramic sunrises over rolling hills, stargazing deck, and tribal dining.",
+    "price": "৳9,500 / night",
+    "status": "rent",
+    "area": "1,400 sq ft",
+    "location": "Sajek Valley, Rangamati",
+    "image": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=800&q=80",
+    "facilities": ["cloud view deck", "bonfire zone", "2 bedrooms", "traditional cuisine", "solar power", "stargazing point"]
+  },
+  {
+    "id": "vac-004",
+    "estate_title": "Lakefront Serenity Villa",
+    "segment_name": "Vacation Rental",
+    "description": "Luxury private villa right on the shore of Kaptai Lake with personal speed boat pier, infinity pool overlooking waters, and outdoor barbecue cabana.",
+    "price": "৳18,000 / night",
+    "status": "rent",
+    "area": "2,600 sq ft",
+    "location": "Kaptai Lake, Rangamati",
+    "image": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=800&q=80",
+    "facilities": ["lake pier", "infinity pool", "bbq cabana", "3 bedrooms", "kayak boat included", "wifi"]
+  },
+  {
+    "id": "vac-005",
+    "estate_title": "Sundarbans Riverside Eco Lodge",
+    "segment_name": "Vacation Rental",
+    "description": "Immersive mangrove eco-cottage on the riverbank offering guided wildlife birdwatching tours, wooden verandah, and fresh river fish delicacies.",
+    "price": "৳11,000 / night",
+    "status": "rent",
+    "area": "1,800 sq ft",
+    "location": "Mongla, Bagerhat",
+    "image": "https://images.unsplash.com/photo-1448375240586-882707db888b?w=800&q=80",
+    "facilities": ["mangrove view", "guided boat tour", "wooden verandah", "2 bedrooms", "organic food", "solar backup"]
+  },
+  {
+    "id": "vac-006",
+    "estate_title": "Coral Bay Oceanfront Bungalow",
+    "segment_name": "Vacation Rental",
+    "description": "Exclusive thatched-roof beach bungalow on pristine coral sands, offering crystal-clear turquoise waters, hammock grove, and coconut refreshers.",
+    "price": "৳14,500 / night",
+    "status": "rent",
+    "area": "1,650 sq ft",
+    "location": "Saint Martin's Island",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80",
+    "facilities": ["ocean front", "coral beach access", "hammock grove", "seafood grill", "snorkeling gear", "caretaker"]
   }
 ]
