@@ -1,0 +1,116 @@
+[
+  {
+    "id": "res-001",
+    "estate_title": "Meadow Court Family Home",
+    "segment_name": "Single-Family Home",
+    "description": "A bright family residence with generous living spaces, a private garden and practical everyday facilities. This home features an open-plan kitchen, spacious bedrooms and a beautifully landscaped outdoor area perfect for families.",
+    "price": "৳1,85,00,000",
+    "status": "sale",
+    "area": "2,450 sq ft",
+    "location": "Bashundhara, Dhaka",
+    "image": "/images/property-1.jpg",
+    "facilities": [
+      "living room",
+      "modern kitchen",
+      "private garden",
+      "3 bedrooms",
+      "2 bathrooms",
+      "parking"
+    ]
+  },
+  {
+    "id": "res-002",
+    "estate_title": "Lakeview Comfort Apartment",
+    "segment_name": "Apartment",
+    "description": "A contemporary apartment with open views, efficient room planning and a calm residential atmosphere. Large windows bring natural light into every room while the modern layout maximizes usable space.",
+    "price": "৳58,000 / month",
+    "status": "rent",
+    "area": "1,720 sq ft",
+    "location": "Uttara, Dhaka",
+    "image": "/images/property-2.jpg",
+    "facilities": [
+      "living room",
+      "kitchen",
+      "balcony",
+      "3 bedrooms",
+      "2 bathrooms",
+      "lift"
+    ]
+  },
+  {
+    "id": "res-003",
+    "estate_title": "Green Lane Townhouse",
+    "segment_name": "Townhouse",
+    "description": "A stylish townhouse designed for residents who want a balance between privacy, community and convenient city access. Features multiple floors with distinct living and sleeping zones.",
+    "price": "৳92,000 / month",
+    "status": "rent",
+    "area": "2,100 sq ft",
+    "location": "Dhanmondi, Dhaka",
+    "image": "/images/property-3.jpg",
+    "facilities": [
+      "living room",
+      "dining area",
+      "kitchen",
+      "roof access",
+      "parking",
+      "3 bedrooms"
+    ]
+  },
+  {
+    "id": "res-004",
+    "estate_title": "Campus Nest Student Residence",
+    "segment_name": "Student Housing",
+    "description": "A purpose-oriented residential space with study-friendly rooms and shared facilities for student living. Located near major universities with easy transport access.",
+    "price": "৳18,000 / month",
+    "status": "rent",
+    "area": "850 sq ft",
+    "location": "Dhanmondi, Dhaka",
+    "image": "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=800&q=80",
+    "facilities": [
+      "study room",
+      "shared kitchen",
+      "Wi-Fi",
+      "security",
+      "laundry",
+      "common lounge"
+    ]
+  },
+  {
+    "id": "res-005",
+    "estate_title": "Willow Senior Living Residence",
+    "segment_name": "Senior Living Community",
+    "description": "A comfortable residential environment planned around accessibility, safety and peaceful day-to-day living. Staff support and community activities create a warm, engaging atmosphere.",
+    "price": "৳65,000 / month",
+    "status": "rent",
+    "area": "1,300 sq ft",
+    "location": "Gulshan, Dhaka",
+    "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&q=80",
+    "facilities": [
+      "accessible entry",
+      "bedroom",
+      "common lounge",
+      "security",
+      "elevator",
+      "medical assistance area"
+    ]
+  },
+  {
+    "id": "res-006",
+    "estate_title": "Sunrise Holiday Residence",
+    "segment_name": "Vacation Rental",
+    "description": "A relaxed residential vacation stay with spacious rooms, open surroundings and family-friendly amenities. Wake up to sea views and enjoy the coastal lifestyle at its finest.",
+    "price": "৳12,000 / night",
+    "status": "rent",
+    "area": "1,950 sq ft",
+    "location": "Cox's Bazar, Bangladesh",
+    "image": "https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?w=800&q=80",
+    "facilities": [
+      "living room",
+      "kitchen",
+      "2 bedrooms",
+      "sea-view balcony",
+      "parking",
+      "Wi-Fi"
+    ]
+  }
+]
