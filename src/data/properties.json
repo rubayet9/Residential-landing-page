@@ -60,7 +60,7 @@
     "id": "res-004",
     "estate_title": "Campus Nest Student Residence",
     "segment_name": "Student Housing",
-    "description": "A purpose-oriented residential space with study-friendly rooms and shared facilities for student living. Located near major universities with easy transport access.",
+    "description": "A purpose-oriented residential space with study-friendly rooms and shared facilities for student living. Located near major universities with high-speed internet and quiet study zones.",
     "price": "৳18,000 / month",
     "status": "rent",
     "area": "850 sq ft",
@@ -69,9 +69,9 @@
     "facilities": [
       "study room",
       "shared kitchen",
-      "Wi-Fi",
-      "security",
-      "laundry",
+      "high-speed Wi-Fi",
+      "24/7 security",
+      "laundry facility",
       "common lounge"
     ]
   },
@@ -79,7 +79,7 @@
     "id": "res-005",
     "estate_title": "Willow Senior Living Residence",
     "segment_name": "Senior Living Community",
-    "description": "A comfortable residential environment planned around accessibility, safety and peaceful day-to-day living. Staff support and community activities create a warm, engaging atmosphere.",
+    "description": "A comfortable residential environment planned around accessibility, safety and peaceful day-to-day living. Equipped with elevator access, emergency response, and community gardens.",
     "price": "৳65,000 / month",
     "status": "rent",
     "area": "1,300 sq ft",
@@ -87,30 +87,87 @@
     "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&q=80",
     "facilities": [
       "accessible entry",
-      "bedroom",
+      "wheelchair friendly",
       "common lounge",
-      "security",
+      "medical assistance",
       "elevator",
-      "medical assistance area"
+      "landscaped park"
     ]
   },
   {
     "id": "res-006",
-    "estate_title": "Sunrise Holiday Residence",
+    "estate_title": "Sunrise Coastal Holiday Residence",
     "segment_name": "Vacation Rental",
-    "description": "A relaxed residential vacation stay with spacious rooms, open surroundings and family-friendly amenities. Wake up to sea views and enjoy the coastal lifestyle at its finest.",
+    "description": "A relaxed residential vacation stay with panoramic sea views, open surroundings and family-friendly amenities. Perfect for refreshing getaways with private beachfront access.",
     "price": "৳12,000 / night",
     "status": "rent",
     "area": "1,950 sq ft",
     "location": "Cox's Bazar, Bangladesh",
     "image": "https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?w=800&q=80",
     "facilities": [
-      "living room",
-      "kitchen",
-      "2 bedrooms",
       "sea-view balcony",
-      "parking",
-      "Wi-Fi"
+      "open-air terrace",
+      "modern kitchen",
+      "2 bedrooms",
+      "private parking",
+      "swimming pool access"
+    ]
+  },
+  {
+    "id": "res-007",
+    "estate_title": "Evergreen Forest Villa",
+    "segment_name": "Single-Family Home",
+    "description": "An architectural masterpiece offering luxury living nestled amidst natural greenery. Features high ceilings, double glazed windows, a private pool, and smart home automation throughout.",
+    "price": "৳3,40,00,000",
+    "status": "sale",
+    "area": "3,800 sq ft",
+    "location": "Purbachal, Dhaka",
+    "image": "https://images.unsplash.com/photo-1613977257363-707ba9348227?w=800&q=80",
+    "facilities": [
+      "private swimming pool",
+      "smart home system",
+      "4 master bedrooms",
+      "landscaped lawn",
+      "servant quarter",
+      "double garage"
+    ]
+  },
+  {
+    "id": "res-008",
+    "estate_title": "Skyline Grand Penthouse",
+    "segment_name": "Apartment",
+    "description": "Ultra-modern top-floor penthouse with 360-degree city skyline views, private elevator access, designer italian kitchen, and an expansive rooftop sky lounge.",
+    "price": "৳2,75,00,000",
+    "status": "sale",
+    "area": "3,200 sq ft",
+    "location": "Banani, Dhaka",
+    "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80",
+    "facilities": [
+      "sky deck",
+      "private elevator",
+      "italian modular kitchen",
+      "3 suite bedrooms",
+      "jacuzzi",
+      "gym access"
+    ]
+  },
+  {
+    "id": "res-009",
+    "estate_title": "Tea Garden Hillside Retreat",
+    "segment_name": "Vacation Rental",
+    "description": "Charming wooden-accent vacation bungalow perched above tranquil tea gardens. Experience cool mountain breezes, cozy bonfire nights, and scenic trekking trails.",
+    "price": "৳15,000 / night",
+    "status": "rent",
+    "area": "2,200 sq ft",
+    "location": "Sreemangal, Sylhet",
+    "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
+    "facilities": [
+      "tea garden view",
+      "outdoor barbecue & firepit",
+      "wooden deck",
+      "3 bedrooms",
+      "fireplace",
+      "caretaker service"
     ]
   }
 ]

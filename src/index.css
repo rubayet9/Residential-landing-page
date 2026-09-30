@@ -788,6 +788,178 @@ button {
    AUTH PAGES (Login / Register)
    =================================== */
 
+/* ===================================
+   AUTH MODAL / POPUP
+   =================================== */
+
+.auth-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(15, 23, 42, 0.72);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-md);
+  overflow-y: auto;
+  animation: modalFadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.auth-modal-card {
+  position: relative;
+  width: 100%;
+  max-width: 860px;
+  background: var(--surface);
+  border-radius: var(--radius-xl);
+  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(255, 255, 255, 0.15);
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  overflow: hidden;
+  animation: modalPopIn 0.32s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  max-height: 92vh;
+}
+
+@keyframes modalPopIn {
+  from {
+    opacity: 0;
+    transform: scale(0.92) translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.auth-modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 20;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  font-size: 1.25rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.auth-modal-close:hover {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+  transform: rotate(90deg) scale(1.08);
+}
+
+.auth-modal-image {
+  position: relative;
+  overflow: hidden;
+  background: var(--primary);
+  min-height: 100%;
+}
+
+.auth-modal-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.auth-modal-image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(23, 59, 54, 0.45) 0%, rgba(15, 30, 27, 0.94) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: var(--space-2xl);
+  color: #fff;
+}
+
+.auth-modal-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.75rem;
+  background: rgba(217, 183, 122, 0.25);
+  border: 1px solid rgba(217, 183, 122, 0.5);
+  color: var(--secondary);
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: var(--space-md);
+  width: fit-content;
+  backdrop-filter: blur(4px);
+}
+
+.auth-modal-image-overlay h3 {
+  font-family: var(--font-heading);
+  font-size: 1.65rem;
+  color: #fff;
+  margin-bottom: 0.4rem;
+  line-height: 1.25;
+}
+
+.auth-modal-image-overlay p {
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.82);
+  line-height: 1.5;
+}
+
+.auth-modal-body {
+  padding: var(--space-2xl) var(--space-2xl);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.auth-modal-header {
+  margin-bottom: var(--space-lg);
+}
+
+.auth-modal-title {
+  font-size: 1.75rem;
+  font-family: var(--font-heading);
+  color: var(--text);
+  margin-bottom: 0.25rem;
+}
+
+.auth-modal-subtitle {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+@media (max-width: 768px) {
+  .auth-modal-card {
+    grid-template-columns: 1fr;
+    max-width: 440px;
+    max-height: 94vh;
+  }
+  .auth-modal-image {
+    display: none;
+  }
+  .auth-modal-body {
+    padding: var(--space-xl);
+  }
+}
+
 .auth-section {
   min-height: calc(100vh - 72px);
   display: flex;

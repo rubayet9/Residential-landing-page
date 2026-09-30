@@ -40,7 +40,7 @@ const Register = () => {
     setIsLoading(true);
     try {
       await createUser(data.email, data.password);
-      await updateUserProfile(data.name, "");
+      await updateUserProfile(data.name, data.photoURL || "");
       toast.success("Account created successfully.");
       navigate("/");
     } catch (error) {
@@ -112,6 +112,20 @@ const Register = () => {
                 />
                 {errors.name && (
                   <span className="field-error">{errors.name.message}</span>
+                )}
+              </div>
+
+              <div className="form-group">
+                <label htmlFor="reg-photo">Photo URL (Optional)</label>
+                <input
+                  id="reg-photo"
+                  type="url"
+                  placeholder="https://example.com/avatar.jpg"
+                  autoComplete="url"
+                  {...register("photoURL")}
+                />
+                {errors.photoURL && (
+                  <span className="field-error">{errors.photoURL.message}</span>
                 )}
               </div>
 
