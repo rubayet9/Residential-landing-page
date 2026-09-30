@@ -139,6 +139,20 @@ const Login = () => {
 
         {/* Modal Form Content */}
         <div className="auth-modal-body">
+          {/* Top Tabs: Login / Register */}
+          <div className="auth-modal-tabs">
+            <button type="button" className="auth-tab-btn active">
+              Sign In
+            </button>
+            <Link 
+              to="/register" 
+              state={{ from: location.state?.from }} 
+              className="auth-tab-btn"
+            >
+              Create Account
+            </Link>
+          </div>
+
           <div className="auth-modal-header">
             <h2 id="modal-login-title" className="auth-modal-title">Welcome Back</h2>
             <p className="auth-modal-subtitle">
@@ -146,7 +160,7 @@ const Login = () => {
             </p>
           </div>
 
-          <form onSubmit={handleSubmit(onSubmit)} className="auth-form">
+          <form onSubmit={handleSubmit(onSubmit)} className="auth-form compact-form">
             <div className="form-group">
               <label htmlFor="login-email">Email Address</label>
               <input
@@ -225,12 +239,16 @@ const Login = () => {
             </button>
           </div>
 
-          <p className="auth-switch">
-            Don't have an account?{" "}
-            <Link to="/register" state={{ from: location.state?.from }}>
-              Create an account
+          <div className="auth-switch-box">
+            <span>Don't have an account?</span>{" "}
+            <Link 
+              to="/register" 
+              state={{ from: location.state?.from }}
+              className="auth-link-highlight"
+            >
+              Register Now →
             </Link>
-          </p>
+          </div>
         </div>
       </div>
     </div>

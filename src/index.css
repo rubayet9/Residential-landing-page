@@ -796,13 +796,13 @@ button {
   position: fixed;
   inset: 0;
   z-index: 9999;
-  background: rgba(15, 23, 42, 0.72);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: var(--space-md);
+  padding: 1rem;
   overflow-y: auto;
   animation: modalFadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
@@ -821,19 +821,20 @@ button {
   width: 100%;
   max-width: 860px;
   background: var(--surface);
-  border-radius: var(--radius-xl);
-  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(255, 255, 255, 0.15);
+  border-radius: 1.25rem;
+  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(255, 255, 255, 0.18);
   display: grid;
-  grid-template-columns: 1fr 1.15fr;
+  grid-template-columns: 1fr 1.18fr;
   overflow: hidden;
-  animation: modalPopIn 0.32s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-  max-height: 92vh;
+  animation: modalPopIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  max-height: min(94vh, 690px);
+  margin: auto;
 }
 
 @keyframes modalPopIn {
   from {
     opacity: 0;
-    transform: scale(0.92) translateY(18px);
+    transform: scale(0.94) translateY(14px);
   }
   to {
     opacity: 1;
@@ -843,11 +844,11 @@ button {
 
 .auth-modal-close {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
+  top: 0.85rem;
+  right: 0.85rem;
   z-index: 20;
-  width: 36px;
-  height: 36px;
+  width: 34px;
+  height: 34px;
   border-radius: 50%;
   border: 1px solid var(--border);
   background: rgba(255, 255, 255, 0.95);
@@ -857,7 +858,7 @@ button {
   justify-content: center;
   cursor: pointer;
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   box-shadow: var(--shadow-sm);
 }
 
@@ -872,7 +873,7 @@ button {
   position: relative;
   overflow: hidden;
   background: var(--primary);
-  min-height: 100%;
+  height: 100%;
 }
 
 .auth-modal-image img {
@@ -884,66 +885,156 @@ button {
 .auth-modal-image-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(23, 59, 54, 0.45) 0%, rgba(15, 30, 27, 0.94) 100%);
+  background: linear-gradient(180deg, rgba(23, 59, 54, 0.4) 0%, rgba(15, 30, 27, 0.94) 100%);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: var(--space-2xl);
+  padding: 2rem 1.75rem;
   color: #fff;
 }
 
 .auth-modal-badge {
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
-  padding: 0.3rem 0.75rem;
+  gap: 0.35rem;
+  padding: 0.25rem 0.65rem;
   background: rgba(217, 183, 122, 0.25);
   border: 1px solid rgba(217, 183, 122, 0.5);
   color: var(--secondary);
   border-radius: var(--radius-full);
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   font-weight: 600;
-  margin-bottom: var(--space-md);
+  margin-bottom: 0.75rem;
   width: fit-content;
   backdrop-filter: blur(4px);
 }
 
 .auth-modal-image-overlay h3 {
   font-family: var(--font-heading);
-  font-size: 1.65rem;
+  font-size: 1.55rem;
   color: #fff;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.35rem;
   line-height: 1.25;
 }
 
 .auth-modal-image-overlay p {
-  font-size: 0.88rem;
-  color: rgba(255, 255, 255, 0.82);
-  line-height: 1.5;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.45;
 }
 
 .auth-modal-body {
-  padding: var(--space-2xl) var(--space-2xl);
+  padding: 1.5rem 1.75rem;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  max-height: min(94vh, 690px);
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+}
+
+.auth-modal-body::-webkit-scrollbar {
+  width: 5px;
+}
+
+.auth-modal-body::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}
+
+/* Modal Tabs */
+.auth-modal-tabs {
+  display: flex;
+  background: rgba(23, 59, 54, 0.07);
+  padding: 3px;
+  border-radius: var(--radius-md);
+  margin-bottom: 0.85rem;
+  border: 1px solid var(--border);
+}
+
+.auth-tab-btn {
+  flex: 1;
+  text-align: center;
+  padding: 0.45rem 0.6rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  border-radius: var(--radius-sm);
+  transition: all 0.2s ease;
+  border: none;
+  background: transparent;
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+}
+
+.auth-tab-btn.active {
+  background: var(--surface);
+  color: var(--primary);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.auth-tab-btn:hover:not(.active) {
+  color: var(--primary);
 }
 
 .auth-modal-header {
-  margin-bottom: var(--space-lg);
+  margin-bottom: 0.75rem;
 }
 
 .auth-modal-title {
-  font-size: 1.75rem;
+  font-size: 1.45rem;
   font-family: var(--font-heading);
   color: var(--text);
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.15rem;
 }
 
 .auth-modal-subtitle {
-  font-size: 0.88rem;
+  font-size: 0.82rem;
   color: var(--text-muted);
+}
+
+.compact-form {
+  gap: 0.6rem;
+}
+
+.compact-form .form-group {
+  gap: 0.2rem;
+}
+
+.compact-form .form-group label {
+  font-size: 0.78rem;
+}
+
+.compact-form .form-group input {
+  padding: 0.55rem 0.75rem;
+  font-size: 0.86rem;
+}
+
+.compact-rules small {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+}
+
+.auth-switch-box {
+  text-align: center;
+  margin-top: 0.75rem;
+  padding-top: 0.4rem;
+  font-size: 0.84rem;
+  color: var(--text-muted);
+}
+
+.auth-link-highlight {
+  font-weight: 700;
+  color: var(--primary);
+  margin-left: 0.25rem;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.auth-link-highlight:hover {
+  color: var(--secondary);
 }
 
 @media (max-width: 768px) {
@@ -956,7 +1047,7 @@ button {
     display: none;
   }
   .auth-modal-body {
-    padding: var(--space-xl);
+    padding: 1.25rem 1.25rem;
   }
 }
 
